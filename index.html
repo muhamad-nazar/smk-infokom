@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMK INFOKOM Kota Bogor</title>
+    <link rel="stylesheet" href="asset/bs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="asset/native/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="asset/img/logo/logo.png" type="image/x-icon">
+
+    <!-- Include JS -->
+    <script src="asset/bs/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="asset/img/logo/logofix.png" class="logoNav" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link actives" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Jurusan</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Program Sekolah
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="">Kurikulum</a></li>
+                            <li><a class="dropdown-item" href="">Kesiswaan</a></li>
+                            <li><a class="dropdown-item" href="">Hubinmas</a></li>
+                            <li><a class="dropdown-item" href="">Sarpras</a></li>
+                            <li><a class="dropdown-item" href="">Management Mutu</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Galeri
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                            <li><a class="dropdown-item" href="">Profile Sekolah</a></li>
+                            <li><a class="dropdown-item" href="">OSIS</a></li>
+                            <li><a class="dropdown-item" href="">Praktek Kerja Lapangan (PKL)</a></li>
+                            <li><a class="dropdown-item" href="">Akademik</a></li>
+                            <li><a class="dropdown-item" href="">Industri</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PPDB
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                            <li><a class="dropdown-item" href="">Informasi Pendaftaran</a></li>
+                            <li><a class="dropdown-item" href="">Daftar Siswa Baru</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Login
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                            <li><a class="dropdown-item" href="">Download Kartu Ujian</a></li>
+                            <li><a class="dropdown-item" href="">Link/Akses Ujian</a></li>
+                            <li><a class="dropdown-item" href="">School Management Mutu (SMS)</a></li>
+                            <li><a class="dropdown-item" href="">Link/Akses Ujian</a></li>
+                            <li><a class="dropdown-item" href="">E-Learning</a></li>
+                            <li><a class="dropdown-item" href="">Internal</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End Navbar-->
+
+    <!--Side Bar-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h4 class="offcanvas-title name-pesantren" id="offcanvasExampleLabel">
+                <img src="asset/img/logo/logofix.png" class="logoNav" alt="">
+            </h4>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul style="list-style: none;" class="side-list">
+
+                <li class="sidebar-item">
+                    <a href="index.html" class="sidebar-link actives">Home</a>
+                </li>
+
+                <li class="sidebar-item mt-4">
+                    <a class="sidebar-link" href="">
+                        Jurusan
+                    </a>
+                </li>
+
+                <li class="sidebar-item mt-4">
+                    <a class="sidebar-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Program Sekolah <i class="bi bi-arrow-right-short"></i>
+                    </a>
+                </li>
+
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <ul style="list-style: none;">
+                            <li style="margin-left: -30px;">
+                                <a href="" class="sidebar-link1">Kurikulum</a>
+                            </li>
+                            <li class="mt-4" style="margin-left: -30px;">
+                                <a href="" class="sidebar-link1">Kesiswaan</a>
+                            </li>
+                            <li class="mt-4" style="margin-left: -30px;">
+                                <a href="" class="sidebar-link1">Hubinmas</a>
+                            </li>
+                            <li class="mt-4" style="margin-left: -30px;">
+                                <a href="" class="sidebar-link1">Sarpras</a>
+                            </li>
+                            <li class="mt-4" style="margin-left: -30px;">
+                                <a href="" class="sidebar-link1">Management Mutu</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <li class="sidebar-item mt-4">
+                    <a class="sidebar-link" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+                        Galeri <i class="bi bi-arrow-right-short"></i>
+                    </a>
+                </li>
+
+                <div class="collapse" id="collapseExample1">
+                    <div class="card card-body">
+                        <ul style="list-style: none;">
+                            <li style="margin-left: -30px;">
+                                <a href="" class="sidebar-link1">Profile Sekolah</a>
+                            </li>
+                            <li class="mt-4" style="margin-left: -30px;">
+                                <a href="" class="sidebar-link1">OSIS</a>
+                            </li>
+                            <li class="mt-4" style="margin-left: -30px;">
+                                <a href="" class="sidebar-link1">Praktek Kerja Lapangan (PKL)</a>
+                            </li>
+                            <li class="mt-4" style="margin-left: -30px;">
+                                <a href="" class="sidebar-link1">Akademik</a>
+                            </li>
+                            <li class="mt-4" style="margin-left: -30px;">
+                                <a href="" class="sidebar-link1">Industri</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <li class="sidebar-item mt-4">
+                    <a class="sidebar-link" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                        PPDB <i class="bi bi-arrow-right-short"></i>
+                    </a>
+                </li>
+
+                <div class="collapse" id="collapseExample2">
+                    <div class="card card-body">
+                        <ul style="list-style: none;">
+                            <li style="margin-left: -30px;">
+                                <a href="" class="sidebar-link1">Informasi Pendaftaran</a>
+                            </li>
+                            <li class="mt-4" style="margin-left: -30px;">
+                                <a href="" class="sidebar-link1">Daftar Siswa Baru</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <li class="sidebar-item mt-4">
+                    <a class="sidebar-link" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+                        Login <i class="bi bi-arrow-right-short"></i>
+                    </a>
+                </li>
+
+                <div class="collapse" id="collapseExample3">
+                    <div class="card card-body">
+                        <ul style="list-style: none;">
+                            <li style="margin-left: -30px;">
+                                <a href="" class="sidebar-link1">Download Kartu Ujian</a>
+                            </li>
+                            <li class="mt-4" style="margin-left: -30px;">
+                                <a href="" class="sidebar-link1">Link/Akses Ujian</a>
+                            </li>
+                            <li class="mt-4" style="margin-left: -30px;">
+                                <a href="" class="sidebar-link1">School Management Mutu</a>
+                            </li>
+                            <li class="mt-4" style="margin-left: -30px;">
+                                <a href="" class="sidebar-link1">E-Learning</a>
+                            </li>
+                            <li class="mt-4" style="margin-left: -30px;">
+                                <a href="" class="sidebar-link1">Internal</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <li class="sidebar-item mt-4">
+                    <a class="sidebar-link" href="">
+                        News
+                    </a>
+                </li>
+
+                <li class="sidebar-item mt-4">
+                    <a class="sidebar-link" href="">
+                        Contact
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+    <!--End Side Bar-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Carousel-->
+
+    <img src="asset/img/carousel/car1.jpg" alt=" " class="img-bg android">
+    <div class="android covers">
+    </div>
+    <div class="container pb-5">
+
+        <!--First Row-->
+        <div class="row carousels">
+
+
+            <!--Teks Di Carousel-->
+            <div class="col-md-6 position-relative">
+                <h5 class="text-carousel">SMK INFORMATIKA & TELEKOMUNIKASI (INFOKOM) KOTA BOGOR</h5>
+                <a href="" class="btn" style="background-color: #002147; color: #ffffff;">Info PPDB</a>
+                <a href="" class="btn" style="background-color: #002147;color: #fff;">Daftar</a>
+            </div>
+
+            <!--End Teks Di Carousel-->
+
+
+            <!--Gambar Di Carousel-->
+            <div class="col-md-6 text-center desktop" data-aos="flip-right" data-aos-duration="3000">
+                <div class="border-carousel"></div>
+                <div class="border-carousel2"></div>
+                <img src="asset/img/carousel/car1.jpg" class="carousel-img" alt="">
+                <p class="akreditasi">Terakreditasi A</p>
+            </div>
+            <!--End Gambar Di Carousel-->
+        </div>
+        <!--End First Row-->
+
+    </div>
+
+    <!--End Carousel-->
+
+
+
+
+    <!--Sambutan-->
+    <div class="container pt-5 mt-5 pb-5 mb-5">
+
+        <div class="title" data-aos="zoom-out-right" data-aos-duration="2000">
+            <h5 class="title-divider">Sambutan Kepala Sekolah</h5>
+            <div class="divider"></div>
+        </div>
+
+        <!--Row-->
+        <div class="row">
+
+            <div class="col-md-4 mb-4" data-aos="zoom-in-left" data-aos-duration="2000">
+                <img src="asset/img/carousel/car1.jpg" class="foto-sambutan" alt="">
+                <h5 class="nama-sambutan">Ir. Hj. Liliek Rahmaningsih, M.MPd</h5>
+                <p class="gelar-sambutan">Kepala Sekolah</p>
+            </div>
+
+            <div class="col-md-8 mb-4">
+                <p class="kata-sambutan">
+                    Assalaamu’alaikum Warahmatullahi Wabarakatuh. Salam sejahtera untuk kita semua. Segala puji syukur kita panjatkan ke hadirat Allah SWT, karena atas limpahan Rahmat, dan Karunia-Nya sehingga Website resmi SMK INFOKOM Kota Bogor ini dapat terus kita kembangkan
+                    sebagai sarana Informasi yang akurat mengenai segala hal yang berkaitan dengan sekolah ini.
+                    <span id="dots">...</span>
+                    <span id="more" class="more">
+                      Ucapan terima kasih juga kami haturkan kepada semua pihak yang telah memberikan
+                      dukungan dan masukan dalam kelancaran pengembangan Website ini. Selamat datang di
+                      Website resmi SMK INFOKOM Kota Bogor. Di era digital saat ini, website sekolah
+                      merupakan pintu gerbang informasi terdepan sebagai sarana untuk menyebarluaskan
+                      berbagai publikasi terkait kemajuan pendidikan dan pencapaian sekolah terkini.
+                      Sebagai media pembelajaran, terlebih di masa pandemi masih berlangsung, Website
+                      sekolah juga diarahkan dapat mendatangkan kemanfaatan sebagai sarana pembelajaran
+                      dengan memuat blog, e-learning, karya dan media pembelajaran yang dibuat oleh
+                      pendidik serta para siswa. Di sisi lain kami sungguh berharap Website ini juga
+                      dapat menjadi sarana silaturahmi dan komunikasi antara sekolah dengan para alumni
+                      di berbagai tempat, sebagai sebuah keluarga besar yang solid serta dapat
+                      berkontribusi dalam memajukan pendidikan di SMK INFOKOM tercinta. Kami menyadari
+                      website SMK INFOKOM ini masih memiliki banyak kekurangan, oleh karena itu, kami
+                      akan terus belajar dan meng-update diri, sehingga konten dan kualitas tampilan
+                      website sekolah ini akan semakin berkembang. Kritik, saran dan masukan dari
+                      berbagai stake holder sekolah tentu sangat kami harapkan. Kepada tim pengembang
+                      dan pengelola, kami berharap agar dapat terus menyempurnakannya dengan penuh
+                      keikhlasan serta tanggung jawab. Terima kasih atas kerjasamanya, mari terus
+                      berkarya menuju SMK INFOKOM yang lebih berkualitas dan berjaya dalam mencerdaskan
+                      kehidupan anak bangsa Indonesia. SMK, Bisa...! SMK INFOKOM, Luar Biasa…!
+                      Wassalamu alaikum Warahmatullahi Wabarakatuh
+                    </span>
+                </p>
+                <a id="viewMore" class="viewMore" onclick="readMore()">Lihat Selengkapnya..</a>
+
+            </div>
+
+        </div>
+        <!--End Row-->
+
+        <div class="title mt-5" data-aos="zoom-out-up" data-aos-duration="2000">
+            <h5 class="title-divider text-center">SMK INFOKOM KOTA BOGOR</h5>
+            <div class="divider" style="margin: 0 auto 0 auto;"></div>
+        </div>
+
+        <!--row-->
+        <div class="row mt-5">
+
+            <div class="col-md-6 mb-4">
+                <p class="tentang-sekolah">Yayasan Telekomunikasi Nasional terletak di dua lokasi yang berbeda tepatnya di Jalan RE Abdullah Nomor 15 Gunung Batu, Bogor menempati lahan seluas 800 m2 dijadikan lokasi pertama satuan pendidikan: SMP INFOKOM Bogor. Sedangkan untuk
+                    lokasi kedua di Jalan Letjen Ibrahim Adjie Nomor 178 Sindang Barang Bogor menempati lahan seluas 2.600 m2 satuan pendidikan: SMK INFOKOM Bogor
+                    <span id="dots1">...</span>
+                    <span id="more1" class="more">
+                    <br> <br> Berdasarkan Akte Pendirian Nomor: 137 dari Akte Notaris Rinasari Dwi Juli, SH. pada tanggal 10 Juni 2010, Yayasan Telekomunikasi Nasional didirikan dengan nama Yayasan Telekomunikasi Nasional oleh para pendirinya yaitu: Ir.
+                    Gun Gun Gunawan, M.Si., Ir. Aan Chandra, Wieke Erwina, M.Si., Moelyati Effendi, MS., Dra. Moerfiah, MS., Dedi Kusdinar SH, MM.,
+                </span>
+                </p>
+                <a id="viewMore1" class="viewMore" onclick="readMore1()">Lihat Selengkapnya..</a>
+            </div>
+
+
+            <div class="col-md-6 mb-4">
+                <!--Card 1-->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-titles text-center mb-4">Visi & Misi</h5>
+                        <p class="card-subtitle mb-3">Visi</p>
+                        <p class="content-card">Terwujudnya SMK Infokom Bogor sebagai SMK yang peduli dan berbudaya lingkungan hidup dengan tamatan yang kompeten dan mampu bersaing di tingkat Nasional, maupun Internasional.</p>
+                        <p class="card-subtitle mt-4 mb-3">Misi</p>
+                        <ol class="list-card">
+                            <li class="content-card">Membangun mental dan sikap peserta didik yang beriman dan bertaqwa kepada Tuhan yang Maha Esa.</li>
+                            <li class="content-card">Mengembangkan kurikulum dan menyelenggarakan pembelajaran berstandar Nasional.</li>
+                            <li class="content-card">Melalui kemitraan, keterbukaan dan pelayanan prima, SMK Infokom Kota Bogor :</li>
+                            <ul class="list-card">
+                                <li class="content-card">Meningkatkan kualitas dan kuantitas tamatan yang siap kerja.</li>
+                                <li class="content-card">Menyiapkan wirausahawan yang handal dan mampu bersaing.</li>
+                                <li class="content-card">Menyiapkan tenaga terampil yang memiliki etos kerja dan kepribadian.</li>
+                            </ul>
+                        </ol>
+                    </div>
+                </div>
+                <!--End Card 1-->
+            </div>
+
+            <div class="col-md-12 mt-3">
+                <!--Card 2-->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-titles text-center mb-4">Tujuan</h5>
+                        <ol class="list-card">
+                            <li class="content-card"> Menyiapkan lulusan yang yang bertaqwa kepada Tuhan Yang Maha Esa, berPaket untuk memasuki lapangan kerja.</li>
+                            <li class="content-card">Menyiapkan lulusan agar menjadi warga negara yang peduli lingkungan, produktif, adaptif, dan kreatif.</li>
+                            <li class="content-card">Menyiapkan lulusan yang memahami sistem manajemen mutu agar mampu berkarir, berkompetisi, dan bersifat profesional. </li>
+                            <li class="content-card">Menyiapkan tenaga kerja tingkat menengah untuk mengisi kebutuhan dunia kerja berskala global.</li>
+                            <li class="content-card">Mempersiapkan peserta didik mampu bekerja mandiri serta mengisi lowongan pekerjaan yang ada di DU/DI sebagai tenaga tingkat menengah sesuai dengan Paket dalam program keahlian.</li>
+                            <li class="content-card">Membekali peserta didik agar mampu mengembangkan sikap profesional dan berPaket dalam bidang keahliannya.</li>
+                            <li class="content-card">Membekali peserta didik dengan ilmu pengetahuan dan teknologi agar mampu mengembangkan diri baik secara mandiri maupun melalui jenjang pendidikan yang lebih tinggi.</li>
+
+                        </ol>
+                    </div>
+                </div>
+                <!--End Card 1-->
+            </div>
+
+        </div>
+        <!--End Row-->
+
+    </div>
+
+    <!--Sambutan-->
+
+
+
+
+
+
+    <!--Program Keahlian-->
+    <div class="container pt-5 mt-5 pb-5 mb-5">
+
+        <div class="title" data-aos="zoom-out-right" data-aos-duration="2000">
+            <h5 class="title-divider">PROGRAM KEAHLIAN</h5>
+            <div class="divider"></div>
+        </div>
+
+        <!--Row-->
+        <div class="row mt-5">
+
+            <!--Col-->
+            <div class="col-md-6 mb-4">
+                <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-titles" style="font-weight: 600;">Rekayasa Perangkat Lunak</h5>
+                        <img src="asset/img/carousel/car1.jpg" class="keahlian-img" alt="">
+                        <p class="keahlian-desk">Mata pelajaran yang diajarkan dalam jurusan ini mencakup pemrograman komputer, analisis dan desain sistem informasi, manajemen basis data, pengujian perangkat lunak, dan manajemen proyek. Selain itu, siswa juga akan dilatih dalam
+                            penggunaan bahasa pemrograman seperti PHP, Javascript, C++, dan Python serta platform pengembangan perangkat lunak seperti Microsoft Visual Studio dan NetBeans. <br> <br> Setelah lulus dari jurusan RPL SMK, siswa memiliki peluang
+                            karir di bidang teknologi informasi dan komputer seperti programmer, analis sistem, pengembang aplikasi mobile, dan administrator basis data. Mereka juga dapat melanjutkan pendidikan ke jenjang yang lebih tinggi seperti D3
+                            atau S1 untuk memperdalam pengetahuan dan keterampilan teknologi informasi dan pengembangan perangkat lunak mereka.</p>
+                    </div>
+                </div>
+            </div>
+            <!--End Col-->
+
+            <!--Col-->
+            <div class="col-md-6 mb-4">
+                <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-titles" style="font-weight: 600;">Desain Komunikasi Visual</h5>
+                        <img src="asset/img/carousel/car1.jpg" class="keahlian-img" alt="">
+                        <p class="keahlian-desk">Mata pelajaran yang diajarkan dalam jurusan ini mencakup desain grafis, ilustrasi, fotografi, animasi, serta penggunaan software seperti Adobe Photoshop, Illustrator, dan InDesign. Selain itu, siswa juga akan belajar tentang teknik
+                            cetak dan produksi visual, termasuk teknik-teknik cetak digital seperti risograph dan screen printing.
+                            <br><br> Setelah lulus dari jurusan Desain Komunikasi Visual SMK, siswa memiliki banyak peluang karir di industri kreatif seperti periklanan, desain grafis, dan media digital. Mereka dapat bekerja sebagai desainer grafis, ilustrator,
+                            fotografer, animator, dan editor video. Selain itu, mereka juga dapat melanjutkan pendidikan ke jenjang yang lebih tinggi seperti D3 atau S1 untuk memperdalam pengetahuan dan keterampilan desain grafis mereka.</p>
+                    </div>
+                </div>
+            </div>
+            <!--End Col-->
+
+            <!--Col-->
+            <div class="col-md-6 mb-4">
+                <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-titles" style="font-weight: 600;">Teknik Komputer Dan Jaringan</h5>
+                        <img src="asset/img/carousel/car1.jpg" class="keahlian-img" alt="">
+                        <p class="keahlian-desk">Mata pelajaran yang diajarkan dalam jurusan ini mencakup instalasi, konfigurasi, dan pemeliharaan perangkat keras dan perangkat lunak, manajemen jaringan, troubleshooting, dan keamanan jaringan. Selain itu, siswa juga akan dilatih
+                            dalam penggunaan alat dan software terkait seperti router, switch, firewall, dan aplikasi jaringan lainnya. <br> <br> Setelah lulus dari jurusan Teknik Komputer dan Jaringan SMK, siswa memiliki peluang karir di bidang teknologi
+                            informasi dan jaringan seperti administrator jaringan, teknisi komputer, teknisi jaringan, dan teknisi keamanan jaringan. Mereka juga dapat melanjutkan pendidikan ke jenjang yang lebih tinggi seperti D3 atau S1 untuk memperdalam
+                            pengetahuan dan keterampilan teknologi informasi dan jaringan mereka.</p>
+                    </div>
+                </div>
+            </div>
+            <!--End Col-->
+
+            <!--Col-->
+            <div class="col-md-6 mb-4">
+                <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-titles" style="font-weight: 600;">Produksi dan Siaran Program Televisi</h5>
+                        <img src="asset/img/carousel/car1.jpg" class="keahlian-img" alt="">
+                        <p class="keahlian-desk">Mata pelajaran yang diajarkan dalam jurusan ini mencakup teori produksi televisi, penulisan naskah, pengeditan video, dan manajemen produksi. Selain itu, siswa juga akan belajar tentang etika dan regulasi media, serta mempelajari
+                            tentang industri media dan bagaimana cara memasarkan produk media.
+                            <br><br> Setelah lulus dari jurusan Produksi dan Siaran Program Televisi SMK, siswa memiliki peluang karir di industri media seperti stasiun televisi, produksi film dan video, perusahaan iklan, dan agensi kreatif. Mereka dapat
+                            bekerja sebagai produser program televisi, editor video, penulis skenario, atau manajer produksi. Selain itu, mereka juga dapat melanjutkan pendidikan ke jenjang yang lebih tinggi seperti D3 atau S1 untuk memperdalam pengetahuan
+                            dan keterampilan produksi media mereka.</p>
+                    </div>
+                </div>
+            </div>
+            <!--End Col-->
+
+        </div>
+        <!--End Row-->
+    </div>
+
+
+
+
+    <!--End Program Keahlian-->
+
+
+
+
+    <!--News-->
+
+    <div class="container">
+        <div class="fixed-bottom text-end">
+            <img src="asset/img/vector/news1.png" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" width="80" class="img-news-vector" alt="">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel" style="color: #002147;">Recent News</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <!--Row-->
+                <div class="row">
+                    <!--berita1-->
+                    <!--col-->
+                    <div class="col">
+                        <a href="">
+                            <img src="asset/img/carousel/car1.jpg" class="news-img-recent" alt="">
+                        </a>
+
+                    </div>
+                    <!--col-->
+                    <div class="col" style="margin-left: -50px;">
+                        <a href="" class="news-recent-text">Jadwal Try Out 2 Tahun Pelajaran 2022/2023</a>
+                    </div>
+                    <!--col-->
+                    <hr class="mt-2">
+                    <!--end berita1-->
+                    <!--berita2-->
+                    <!--col-->
+                    <div class="col">
+                        <a href="">
+                            <img src="asset/img/carousel/car1.jpg" class="news-img-recent" alt="">
+                        </a>
+
+                    </div>
+                    <!--col-->
+                    <div class="col" style="margin-left: -50px;">
+                        <a href="" class="news-recent-text">Jadwal Perpisahan Tahun Pelajaran 2022/2023</a>
+                    </div>
+                    <!--col-->
+                    <hr class="mt-2">
+                    <!--end berita2-->
+                    <!--berita3-->
+                    <!--col-->
+                    <div class="col">
+                        <a href="">
+                            <img src="asset/img/carousel/car1.jpg" class="news-img-recent" alt="">
+                        </a>
+
+                    </div>
+                    <!--col-->
+                    <div class="col" style="margin-left: -50px;">
+                        <a href="" class="news-recent-text">Jadwal Try Out US 2 Tahun Pelajaran 2022/2023</a>
+                    </div>
+                    <!--col-->
+                    <hr class="mt-2">
+                    <!--end berita3-->
+                </div>
+                <!--End Row-->
+            </div>
+        </div>
+    </div>
+    <!--News-->
+
+
+
+
+
+
+
+
+
+
+    <!--Footer-->
+    <div style="background-color: #002147">
+
+        <div class="container pb-5 pt-2">
+
+            <div class="row">
+
+                <div class="col-md-6 mt-5">
+                    <p class="title-nav-foot mb-3">SMK INFOKOM Kota Bogor</p>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.5331624923683!2d106.76508671419715!3d-6.580442266156096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c4f906e40827%3A0x6b93a4462670547c!2sSMK%20Infokom%20Kota%20Bogor!5e0!3m2!1sid!2sid!4v1679726777273!5m2!1sid!2sid"
+                        class="mapsFooter" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+
+
+
+
+                <div class="col-md-6 mt-5 bagian-droid">
+                    <p class="footer-title">Contact Us</p>
+
+                    <br>
+
+                    <p class="contact-footer">
+                        <i class="bi bi-headset me-2"></i> 02518348108</p>
+                    <p class="contact-footer">
+                        <i class="bi bi-telephone me-2"></i> 0878-7307-1400 (Humas SMK INFOKOM)</p>
+                    <p class="contact-footer">
+                        <i class="bi bi-envelope me-2"></i> smk.infokom@gmail.com</p>
+                    <p class="contact-footer">
+                        <i class="bi bi-geo-alt me-2"></i> Jl. Letjen Ibrahim Adjie No.178, RT.03/RW.08, Sindangbarang, Kec. Bogor Barat., Kota Bogor, Jawa Barat 16117</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!--End Footer-->
+
+
+
+    <!--Copyright-->
+
+    <div style="background-color: #002147;border-top: 1px solid #838080;">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12 pt-3 text-center" style="color: #fff;">
+                    <p class="copy-footer">Copyright &copy; 2023 Muhamad Nazar</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--End Copyright-->
+
+
+    <!--Script-->
+    <!-- load jQuery and Bootstrap JS -->
+    <script src="asset/bs/js/slim.js"></script>
+    <script src="asset/bs/js/popper.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- load custom script -->
+    <script src="asset/native/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

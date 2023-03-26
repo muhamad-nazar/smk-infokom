@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis&family=Inter:wght@100&family=Lora:ital,wght@0,400;1,500&family=Montserrat:wght@100;400;500&family=Noto+Serif&family=Poppins:wght@100;300;400&family=Smooch&family=Work+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+}
+
+
+/*Desktop*/
+
+.android {
+    display: none;
+}
+
+
+/*Navbar*/
+
+.logoNav {
+    width: 200px;
+}
+
+.navbar {
+    box-shadow: 0px 14px 8px 0px #e1ebff;
+    -webkit-box-shadow: 0px 14px 8px 0px #e1ebff;
+    -moz-box-shadow: 0px 14px 8px 0px #e1ebff;
+    background-color: rgb(255, 255, 255);
+}
+
+.nav-link {
+    font-size: 0.9em;
+}
+
+.nav-link,
+.dropdown-item {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #002147;
+    font-weight: 550;
+}
+
+.dropdown-menu {
+    background-color: #002147;
+}
+
+.dropdown-item {
+    color: #fff;
+    font-size: 0.8em;
+    padding: 10px;
+}
+
+.dropdown-item:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.dropdown-divider {
+    background-color: #fff;
+}
+
+.actives {
+    border-bottom: 4px solid #002147;
+    color: #000;
+    font-weight: 600;
+}
+
+.sidebar-link {
+    text-decoration: none;
+    color: #002147;
+    font-weight: 550;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+}
+
+.sidebar-link1 {
+    text-decoration: none;
+    color: #002147;
+    font-weight: 550;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+}
+
+.side-list {
+    margin-left: -25px;
+}
+
+.sidebar-item {
+    border-bottom: 1px solid #dadada;
+    width: 240px;
+    padding-bottom: 10px;
+}
+
+
+/*End Navbar*/
+
+
+/*Divider*/
+
+.title-divider {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #002147;
+}
+
+.divider {
+    margin-bottom: 50px;
+    width: 250px;
+    height: 5px;
+    background-color: #002147;
+    margin-top: 5px;
+}
+
+
+/*End Divider*/
+
+
+/*Carousel*/
+
+.carousels {
+    margin: 80px 0;
+}
+
+.text-carousel {
+    width: 550px;
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #002147;
+    font-weight: 650;
+    font-size: 2.2em;
+}
+
+.carousel-img {
+    border: 10px solid #002147;
+    border-bottom: 40px solid #002147;
+    width: 350px;
+    position: relative;
+    height: 380px;
+    transform: rotate(8deg) skew(7deg);
+    -webkit-transform: rotate(8deg) skew(7deg);
+    -moz-transform: rotate(8deg) skew(7deg);
+}
+
+.border-carousel {
+    width: 250px;
+    height: 280px;
+    position: absolute;
+    margin-left: 300px;
+    background-color: #fdc800;
+    transform: rotate(8deg) skew(7deg);
+    -webkit-transform: rotate(8deg) skew(7deg);
+    -moz-transform: rotate(8deg) skew(7deg);
+}
+
+.border-carousel2 {
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    margin-left: 420px;
+    margin-top: 250px;
+    background-color: #f03e3e;
+    transform: rotate(8deg) skew(7deg);
+    -webkit-transform: rotate(8deg) skew(7deg);
+    -moz-transform: rotate(8deg) skew(7deg);
+}
+
+.akreditasi {
+    color: #fff;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5em;
+    margin-top: -38px;
+    margin-right: 20px;
+    transform: rotate(8deg) skew(7deg);
+    -webkit-transform: rotate(8deg) skew(7deg);
+    -moz-transform: rotate(8deg) skew(7deg);
+}
+
+
+/*End Carousel*/
+
+
+/*About*/
+
+.foto-sambutan {
+    width: 100%;
+    border: 10px solid #002147;
+    border-top: 10px solid #fdc800;
+    border-bottom: 70px solid #002147;
+}
+
+.nama-sambutan {
+    color: #fff;
+    margin-left: 15px;
+    font-size: 1.2em;
+    margin-top: -60px;
+}
+
+.gelar-sambutan {
+    color: #fff;
+    margin-left: 15px;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+.kata-sambutan {
+    text-align: justify;
+    font-size: 0.9em;
+}
+
+.more {
+    display: none;
+}
+
+.viewMore {
+    background-color: transparent;
+    color: #002147;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.tentang-sekolah {
+    text-align: justify;
+    font-size: 0.9em;
+}
+
+.card {
+    border-radius: 5px;
+    border-left: 4px solid #fdc800;
+}
+
+.card-titles {
+    color: #002147;
+    font-size: 1.2em;
+}
+
+.card-subtitle {
+    font-size: 1em;
+    color: #002147;
+}
+
+.content-card {
+    font-size: 0.9em;
+    margin-top: 5px;
+    text-align: justify;
+}
+
+.list-card {
+    margin-left: -12px;
+}
+
+
+/*End About*/
+
+
+/*Program Keahlian*/
+
+.keahlian-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.keahlian-desk {
+    text-align: justify;
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+
+/*End Program Keahlian*/
+
+
+/*News*/
+
+.img-news-vector {
+    margin-right: 15px;
+    background-color: #fdc800;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+
+.news-img-recent {
+    width: 150px;
+    height: 100%;
+}
+
+.news-recent-text {
+    height: 100%;
+    text-decoration: none;
+}
+
+
+/*End News*/
+
+
+/*Footer*/
+
+.title-nav-foot {
+    color: #fdc800;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6em;
+}
+
+.footer-title {
+    color: #fdc800;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.contact-footer {
+    font-size: 0.9em;
+    color: #fdc800;
+}
+
+.mapsFooter {
+    width: 100%;
+    height: 200px;
+}
+
+.bagian-droid {
+    padding-left: 70px;
+}
+
+.copy-footer {
+    font-size: 0.9em;
+}
+
+
+/*End Footer*/
+
+
+/*Android Only*/
+
+@media screen and (max-width: 768px) {
+    /*Footer*/
+    .bagian-droid {
+        padding-left: 20px;
+    }
+    /*Footer*/
+    /*Carousel*/
+    .carousels {
+        margin: 40px 0 90px 0;
+    }
+    .text-carousel {
+        width: 240px;
+        margin-top: 50px;
+        font-size: 1.6em;
+    }
+    .img-bg {
+        position: absolute;
+        width: 100%;
+        height: 68%;
+        object-fit: cover;
+    }
+    .covers {
+        background: #fdc800;
+        position: absolute;
+        width: 100%;
+        height: 68%;
+        opacity: 0.8;
+    }
+    /*End Carousel*/
+    /*Program Keahlian*/
+    .keahlian-img {
+        width: 100%;
+        height: 300px;
+    }
+    /*End Program Keahlian*/
+    /*Android*/
+    .desktop {
+        display: none;
+    }
+    .android {
+        display: block;
+    }
+    .container {
+        overflow-x: hidden;
+    }
+}
+
+
+/*Tab Only*/
+
+@media only screen and (min-width: 768px) and (max-width:1110px) {
+    /*Footer*/
+    .bagian-droid {
+        padding-left: 20px;
+    }
+    /*Footer*/
+    /*Carousel*/
+    .carousels {
+        margin: 40px 0 90px 0;
+    }
+    .text-carousel {
+        width: 340px;
+        font-size: 2em;
+        margin-top: 50px;
+    }
+    .img-bg {
+        position: absolute;
+        width: 100%;
+        height: 68%;
+        object-fit: cover;
+    }
+    .covers {
+        background: #fdc800;
+        position: absolute;
+        width: 100%;
+        height: 68%;
+        opacity: 0.8;
+    }
+    /*End Carousel*/
+    /*Android*/
+    .desktop {
+        display: none;
+    }
+    .android {
+        display: block;
+    }
+}
+
+
+/*End Navbar*/
+
+
+/*End Navbar*/
+
+
+/*End Navbar*/
+
+
+/*End Navbar*/
+
+
+/*End Navbar*/
